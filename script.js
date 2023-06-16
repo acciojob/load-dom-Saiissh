@@ -1,9 +1,6 @@
-//your JS code here. If required.
-document.addEventListener('DOMContentLoaded', handleDOMLoad);
-
-function handleDOMLoad() {
-  var paragraph = document.createElement('p');
-  var text = document.createTextNode('DOM load success');
-  paragraph.appendChild(text);
-  document.body.appendChild(paragraph);
-}
+ document.addEventListener('DOMContentLoaded', function() {
+      var message = 'DOM load success';
+      var paragraph = document.createElement('p');
+      paragraph.textContent = message;
+      document.body.appendChild(paragraph);
+    });
